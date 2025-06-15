@@ -1,0 +1,19 @@
+[33mcommit a1d9cf235ca309f034e434aae09461e930ea36e1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: KartavayV <vermakartavay25@gmail.com>
+Date:   Sat Jun 14 21:35:45 2025 +0530
+
+    worked on a simple NN with a single layer
+
+[33mcommit cb318147ed8ccc793fe2042f1ff82d0f458e3f76[m
+Author: KARTAVAY <72963323+kartavayv@users.noreply.github.com>
+Date:   Sat Jun 14 21:28:41 2025 +0530
+
+    Delete 2025-06-14 directory
+    
+    i had to ummmm
+
+[33mcommit 2ad1305daf1e6e31a5e631fa5121e9bb44b0d496[m
+Author: KARTAVAY <kartavayverma@gmail.com>
+Date:   Sat Jun 14 21:16:14 2025 +0530
+
+    todays work: worked on building this simple one layer NN there are some problems but they relate to the type of data you are putting in
