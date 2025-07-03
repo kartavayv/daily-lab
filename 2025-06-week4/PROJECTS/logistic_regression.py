@@ -43,9 +43,9 @@ class logistic_regression():
     m = Y.shape[0]
 
     if self.penalty == "l1":
-      cost = (1/m) * (np.sum(-p1 - p2) + self.reg_strength * (self.reg_l1))
+      cost = (1/m) * (np.sum(-p1 - p2) + self.reg_strength * (self.reg_l1()))
     elif self.penalty == "l2":
-      cost = (1/m) * (np.sum(-p1 - p2) + (self.reg_strength/2) * (self.reg_l2))
+      cost = (1/m) * (np.sum(-p1 - p2) + (self.reg_strength/2) * (self.reg_l2()))
     else:
       cost = (1/m) * (np.sum(-p1 - p2))
 
@@ -100,7 +100,7 @@ class logistic_regression():
     if self.use_polynomial:
       X = self._polynomial_features(X)
     if self.normalize:
-      X = self.normalize(X)
+      X = self.normal(X)
 
     n_x,n_y = self.dimensions(X,Y)
     self.ini_params(n_x,n_y)
@@ -133,7 +133,7 @@ class logistic_regression():
     if self.use_polynomial:
       X = self._polynomial_features(X)
     if self.normalize:
-      X = self.normalize(X)
+      X = self.normal(X)
 
     W = model_params['W']
     b = model_params['b']
@@ -214,7 +214,7 @@ class logistic_regression():
     
     return X
   
-  def normalize(self,X):
+  def normal(self,X):
     for i in range(len(X[0])):
       X_min = np.min(X[i])
       X_std = np.std(X[i])
